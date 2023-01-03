@@ -1,4 +1,6 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import Navbar from '../components/Navbar';
+import { getRouteName } from "../Services/Utilities";
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -12,6 +14,7 @@ const HomeScreen = ({ navigation }) => {
       <TouchableOpacity style={styles.shopLink} onPress={() => navigation.navigate("Shop")}>
         <Text style={styles.shopLinkText}>Go To Shop</Text>
       </TouchableOpacity>
+      <Navbar currentTab={getRouteName(navigation)} />
     </View>
   );
 };
@@ -32,7 +35,8 @@ const styles = StyleSheet.create({
   },
   shopLinkText: {
     fontSize: 20,
-    color: '#FFF'
+    color: '#FFF',
+    fontWeight: 'bold'
   }
 });
 
