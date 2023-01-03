@@ -4,8 +4,8 @@ import Fontisto from 'react-native-vector-icons/Fontisto';
 const Card = ({product}) => {
   return (
     <View style={styles.container}>
-        <ImageBackground source={require('../../../assets/Product.jpg')} style={styles.productImage}>
-            <Text style={styles.saleTag}>{product?.saleTag? product.saleTag: '-20%'}</Text>
+        <ImageBackground source={product.image} style={styles.productImage}>
+            <Text style={product?.discount? styles.saleTag: styles.tag}>{product?.tag? product.tag: '-20%'}</Text>
             <TouchableOpacity style={styles.cartBtn}>
                 <Fontisto style={styles.cartIcon} name="shopping-basket-add" />
             </TouchableOpacity>
@@ -41,6 +41,16 @@ const styles = StyleSheet.create({
     height: 200,
     resizeMode: 'cover',
     borderRadius: 10,
+  },
+  tag: {
+    backgroundColor: 'black',
+    color: 'white',
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 20,
+    alignSelf: 'flex-start',
+    marginTop: 10,
+    marginLeft: 5,
   },
   saleTag: {
     backgroundColor: '#DB3022',
