@@ -10,8 +10,8 @@ const ShopScreen = ({ navigation }) => {
     <View>
       <ScrollView style={styles.container}>
         <ShopBanner />
-        <ShopSection header={'Sale'} subHeader={'Winter Sale'} items={products.sale} />
-        <ShopSection header={'New'} subHeader={'New Collections'} items={products.new} />
+        <ShopSection header={'Sale'} subHeader={'Winter Sale'} items={products.sale} navigation={navigation} />
+        <ShopSection header={'New'} subHeader={'New Collections'} items={products.new} navigation={navigation} />
       </ScrollView>
       <Navbar navigation={navigation} currentTab={"Shop"} />
     </View>
