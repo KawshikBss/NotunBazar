@@ -9,7 +9,7 @@ import {
 import products from "../../products";
 import Card from "./Card";
 
-const ShopSection = ({ header, subHeader, next, items }) => {
+const ShopSection = ({ header, subHeader, next, items, navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.wrapper}>
@@ -27,7 +27,7 @@ const ShopSection = ({ header, subHeader, next, items }) => {
         {
             items?
             items.map((item) => {
-                return (<Card key={item.id} product={item} />)
+                return (<Card key={item.id} product={item} navigation={navigation} />)
             }):
             <Text>No Products</Text>
         }
