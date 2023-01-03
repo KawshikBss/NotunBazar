@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   },
   navIcon: {
     fontSize: 25,
-    color: "#700D05",
+    color: "#232323",
     opacity: 0.5,
   },
   navActive: {
