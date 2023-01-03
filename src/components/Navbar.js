@@ -7,7 +7,6 @@ import {
   View,
 } from "react-native";
 import routes from "../routes";
-import { getRouteName } from "../Services/Utilities";
 
 const Navbar = ({ navigation, currentTab = 'Home' }) => {
   const [activeNav, setActiveNav] = useState(currentTab);
