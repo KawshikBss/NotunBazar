@@ -38,7 +38,7 @@ const ShopSection = ({ header, subHeader, next, items }) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: 200,
+    marginBottom: 10,
   },
   wrapper: {
     flexDirection: "row",
