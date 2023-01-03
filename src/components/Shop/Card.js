@@ -18,8 +18,8 @@ const Card = ({product}) => {
                 <Fontisto style={styles.rating} name="star" />
                 <Fontisto style={styles.rating} name="star" />
             </View>
-            <Text style={styles.title}>{product?.title? product.title: 'Title'}</Text>
-            <Text style={styles.description}>{product?.description? product.description: 'Description'}</Text>
+            <Text style={styles.title}>{product?.title? (product.title.length < 10)? product.title: `${product.title.slice(0, 10)}...`: 'Title'}</Text>
+            <Text style={styles.description}>{product?.description? (product.description.length < 20)? product.description: `${product.description.slice(0, 20)}...`: 'Description'}</Text>
             <View style={styles.priceContainer}>
                 <Text style={styles.discount}>{product?.discount? product.discount: '0'}$</Text>
                 <Text style={styles.price}>{product?.price? product.price: '0'}$</Text>
