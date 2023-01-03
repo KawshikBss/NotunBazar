@@ -8,7 +8,7 @@ const HomeScreen = ({ navigation }) => {
       <Image
         style={styles.banner}
         source={{
-          uri: "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          uri: "https://images.unsplash.com/photo-1513094735237-8f2714d57c13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
         }}
       />
       <Text style={styles.bannerText}>Searching For Something New</Text>
