@@ -146,11 +146,11 @@ const styles = StyleSheet.create({
     },
     itemIcon: {
         fontSize: 20,
-        color: '#232323',
+        color: '#565656',
     },
     itemIconText: {
         fontSize: 16,
-        color: '#232323',
+        color: '#565656',
         textAlign: 'center',
     },
     sections: {},
