@@ -153,7 +153,9 @@ const styles = StyleSheet.create({
         color: '#565656',
         textAlign: 'center',
     },
-    sections: {},
+    sections: {
+        marginBottom: 20,
+    },
 });
 
 export default ProfileScreen;
