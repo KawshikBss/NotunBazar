@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: 120,
-    height: 100,
+    height: 80,
     resizeMode: 'contain',
   },
   imageLink: {
