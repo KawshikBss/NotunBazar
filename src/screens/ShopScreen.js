@@ -21,6 +21,7 @@ const ShopScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     height: 470,
+    backgroundColor: '#E9E9E9',
   },
 });
 
