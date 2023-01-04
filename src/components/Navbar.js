@@ -9,13 +9,12 @@ import {
 import routes from "../routes";
 
 const Navbar = ({ navigation, currentTab = 'Home' }) => {
-  const [activeNav, setActiveNav] = useState(currentTab);
   const getNavStatus = (navName) => {
-    return navName === activeNav ? styles.navActive : styles.navIcon;
+    return navName === currentTab ? styles.navActive : styles.navIcon;
   };
   const changeNav = (navName) => {
-    if (navName === activeNav || navName.length === 0) return;
-    setActiveNav(navName);
+    if (navName === currentTab || navName.length === 0) return;
+    navigation.navigate(navName);
   };
   return (
     <View style={styles.container}>
@@ -26,7 +25,6 @@ const Navbar = ({ navigation, currentTab = 'Home' }) => {
           <TouchableOpacity
             onPress={() => {
               changeNav(item.name);
-              navigation.navigate(item.name);
             }}
             style={styles.navBtn}
           >
