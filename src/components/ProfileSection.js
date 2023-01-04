@@ -14,7 +14,7 @@ const ProfileSection = ({ sectionName, next, items }) => {
                 {items ? (
                     items.map((item, index) => {
                         return (
-                            <TouchableOpacity style={styles.itemContainer}>
+                            <TouchableOpacity key={index} style={styles.itemContainer}>
                                 <item.icon
                                     name={item.iconName}
                                     style={styles.itemIcon}
