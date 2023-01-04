@@ -17,7 +17,7 @@ const routes = [
         iconName: 'shopping-bag'
     },
     {
-        name: 'Settings',
+        name: 'Profile',
         icon: lazy(() => import('react-native-vector-icons/FontAwesome')),
         iconName: 'user'
     }
