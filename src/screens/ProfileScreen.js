@@ -27,7 +27,9 @@ const ProfileScreen = ({ navigation, user }) => {
                         }}
                     >
                         <Text style={styles.heading}>My Profile</Text>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => {
+                            navigation.navigate('Settings');
+                        }}>
                             <Ionicons
                                 style={styles.settingIcon}
                                 name="ios-settings-outline"
